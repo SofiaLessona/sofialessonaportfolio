@@ -1,0 +1,177 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+body{
+    margin:0;
+    padding: 0;
+}
+
+
+/*  NAV  */
+nav{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(#9961B4, #61B48C);
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    color: white;
+}
+
+ul{
+    gap: 30px;
+}
+
+li{
+    list-style: none;
+}
+
+a:link, a:visited {
+    font-size: 1em;
+    color: white;
+}
+
+a:active {
+    color:#9961B4;
+}
+
+
+
+/*  HEADER  */
+header{
+    gap: 100px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+.foto{
+    border-radius: 300px;
+}
+
+
+
+/*  MAIN  */
+main{
+    background: linear-gradient(#61B48C,#9961B4);
+}
+
+/*  sobre mi  */
+
+.sobre_mi{
+    height: 50vh;
+    gap: 40px;
+    color: white;
+    margin: 20px 50px;
+}
+
+main>section{
+    margin: 50px 100px;
+}
+
+/*  skills  */
+
+.estilo_blanco{
+    background-color: white;
+    border-radius: 20px;
+    margin: 40px;
+    padding: 40px;
+}
+
+#skills{
+    width: 100%;
+    height: 40vh; 
+}
+
+.skills_title, .formacion_title{
+    background: linear-gradient(to right, #61B48C,#9961B4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container_tarjetas_skills{
+    height: 30vh;
+    width: 100%;
+    gap: 40px;
+    margin: 30px;
+}
+
+/* formacion */
+
+#formacion{
+    width: 100%;
+    height: 40vh;
+    gap: 20px;
+}
+
+/*  proyectos */
+
+#proyectos{
+    padding: 40px;
+    margin: 30px;
+    border: 5px solid white;
+    border-radius: 30px;
+}
+
+.titulo_proyectos{
+    color: white;
+}
+
+.estilo_boton{
+    width: 50px;
+    color: white;
+    background: linear-gradient(to right, #61B48C,#9961B4);
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 8px 8px;
+}
+
+.tarjeta_proyectos{
+    gap: 10px;
+}
+
+/*  contacto  */
+
+#contacto{
+    color: white;
+}
+
+input, textarea{
+    text-align: left;
+}
+
+.container_formulario{
+    width: 90vw;
+    gap: 50px;
+}
+
+#telefono{
+    border-radius: 10px;
+}
+
+.formulario_contacto{
+    gap: 10px;
+}
+
+input, textarea{
+    border: 3px solid #61B48C;
+    border-radius: 10px;
+}
+
+
+
+/*  FOOTER  */
+footer{
+    gap: 10px;
+    padding: 10px;
+}
+
+.iconos-redes{
+    gap: 20px;
+}

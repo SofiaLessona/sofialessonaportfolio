@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./img/icon-logo.png"> 
+    <title>Sofía Lessona Portfolio</title>
+</head>
+<body>
+    <nav class="d-flex flex-row justify-content-between align-items-center">
+        <div class="logo d-flex flex-row align-items-center ms-4 mt-3">
+            <h1><img width="60px" height="50px" src="./img/lapiz.png" alt="Logo Sofia Lessona" class="lapiz">Sofia Lessona</h1>
+        </div>
+        
+        <ul class="items_nav d-flex flex-row mt-4 me-3 p-4">
+            <li><a class="link text-decoration-none" href="#sobre_mi">Sobre mí</a></li>
+            <li><a class="link text-decoration-none" href="#skills">Skills</a></li>
+            <li><a class="link text-decoration-none" href="#formacion">Formación</a></li>
+            <li><a class="link text-decoration-none" href="#proyectos">Proyectos</a></li>
+            <li><a class="link text-decoration-none" href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="d-flex flex-row justify-content-center align-items-center p-3 m-4">
+        <h3 class="saludo">Bienvenidx, mi nombre es <br> Sofia Lessona <br> y construyo páginas web</h2>
+        <img class="foto" height="290px" width="300px" src="./img/foto-portfolio.jpg" alt="Fotografía de rostro">
+    </header>
+
+    <main class="container-fluid d-flex flex-column align-items-center">
+
+        <section class="sobre_mi d-flex flex-column justify-content-center align-items-center" id="sobre_mi">
+           <h2>Sobre mí</h2>
+
+           <p>No suelo ser una persona que se define por los títulos o cursos realizados, pero sí existe un motor que me mueve adelante, soy una persona con una curiosidad insaciable. Las ganas de aprender me han llevado por varios caminos; entre el grabado, la gastronomía y actualmente el desarrollo web. Emprendí este último a partir de una beca del programa de educación cooperativa de EGG Cooperation. Luego de pasar por un curso de QA Testing del programa de Codo a Codo en el mismo año, conocí el mundo del desarrollo web. Así fue como llegué a la especialización de ‘Professional Front End Developer’ de la Universidad Tecnológica Nacional, complementado con un curso en paralelo de Front End y Python de Codo a Codo. Hoy en día me dedico a generar proyectos para poner en práctica todo lo que voy aprendiendo, para algún día profesionalizarme. 
+            A continuación podrás echar un vistazo a mis trabajos. ¡Que tengas un excelente día!</p>
+        </section>
+
+        <section class="estilo_blanco d-flex flex-column justify-content-around align-items-center mx-0" id="skills">
+            <h2 class="skills_title">Skills</h2>
+            
+            <div class="container_tarjetas_skills d-flex flex-row justify-content-around">
+
+                <div class="tarjeta_skills">
+                    <img width="60px" height="60px" src="./img/html-icon.png" alt="HTML 5">
+                    <p>HTML 5</p>
+                </div>
+                <div class="tarjeta_skills">
+                    <img width="60px" height="60px" src="./img/css-icon.png" alt="CSS 3">
+                    <p>CSS3</p>
+                </div>
+                <div class="tarjeta_skills">
+                    <img width="60px" height="60px" src="./img/js-icon.png" alt="Javascript">
+                    <p>Javascript</p>
+                </div>
+                <div class="tarjeta_skills">
+                    <img width="60px" height="60px" src="./img/vue-icon.png" alt="Vue">
+                    <p>Vue</p>
+                </div>
+                <div class="tarjeta_skills">
+                    <img width="60px" height="60px" src="./img/bootstrap-icon.png" alt="Bootstrap">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="tarjeta_skills">
+                    <img width="60px" height="60px" src="./img/python-icon.png" alt="Python">
+                    <p>Python</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="estilo_blanco d-flex flex-column row mx-0" id="formacion">
+            <h2 class="formacion_title">Formación</h2>
+
+            <div class="d-flex flex-row justify-content-around mt-4">
+
+                <div class="tarjeta_formacion col">
+                    <img width="150px" height="70px" src="./img/egg-logo.jpg" alt="EGG Cooperation">
+                </div>
+                <div class="tarjeta_formacion col">
+                    <img width="170px" height="90px" src="./img/utn-ba-logo.png" alt="Universidad Tecnológica Nacional Buenos Aires">
+                </div>
+                <div class="tarjeta_formacion col">
+                    <img width="150px" height="70px" src="./img/codo-a-codo-logo.png" alt="Codo a Codo">
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="row" id="proyectos">
+            <h2 class="titulo_proyectos">Proyectos</h2>
+
+            <div class="d-flex flex-column align-items-center">
+
+                <div class="estilo_blanco d-flex flex-row align-items-center">
+                    <img class="imagen_proyecto m-4" height="200px" src="./img/paginasofiscoffee.jpg" alt="Sofi's Coffe Shop">
+                    <div class="tarjeta_proyectos">
+                        <h4>Sofi's Coffee Shop</h4>
+                        <p>Primer proyecto para menú de cafetería <br> ficticia, con manejo báscio de HTML y CSS</p>
+                        <a class="estilo_boton text-decoration-none" href="https://sofialessona.github.io/Sofiscoffee/">Ver Demo</a>
+                        <a class="estilo_boton text-decoration-none" href="https://github.com/SofiaLessona/Sofiscoffee">Repositorio</a>
+                    </div>
+                </div>
+
+                <div class="estilo_blanco d-flex flex-row align-items-center">
+                    <div class="tarjeta_proyectos">
+                        <h4>copaXcopa</h4>
+                        <p>Proyecto final junto a <br> Guillermo Novillo para Codo a Codo</p>
+                        <a class="estilo_boton text-decoration-none" href="https://copaxcopa.netlify.app/">Ver Demo</a>
+                        <a class="estilo_boton text-decoration-none" href="https://github.com/SofiaLessona/copaXcopa">Repositorio</a>
+                    </div>
+                    <img class="imagen_proyecto m-4" height="200px" src="./img/paginacopaxcopa.jpg" alt="Copa por Copa">
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section class="contacto " id="contacto">
+            <h2 class="titulo_contacto">Contacto</h2>
+            <p>¿Quieres contactarme? <br> Completa el siguiente formulario y me pondré en contacto lo antes posible.</p>
+
+            <div class="container_formulario d-flex flex-row justify-content-center align-items-center">
+                <img id="telefono" width="350px" height="350px" src="./img/telefono.jpg" alt="Teléfono">
+                <form action="" class="formulario_contacto d-flex flex-column">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>ENVIAR</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="d-flex flex-column justify-content-center align-items-center">
+        <div class="iconos-redes d-flex flex-row">
+            <a href="https://www.instagram.com/sofilessona/"><img width="30px" height="30px" src="./img/logotipo-de-instagram.png" alt="Enlace instagram"></a>
+            <a href="https://github.com/SofiaLessona"><img width="30px" height="30px" src="./img/github.png" alt="Enclace github"></a>
+            <a href="https://www.linkedin.com/in/sofia-lessona/"><img width="30px" height="30px" src="./img/linkedin.png" alt="Enlace linkedin"></a>
+        </div>
+        <p>© Copyright Sofía Lessona - 2023</p>        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
