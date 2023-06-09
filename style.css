@@ -10,24 +10,13 @@ body{
 
 
 /*  NAV  */
-nav{
-    width: 100%;
-    height: 100px;
+.nav{
+    height: 100px; 
     background: linear-gradient(#9961B4, #61B48C);
-    position: sticky;
-    top: 0;
 }
 
 .logo{
     color: white;
-}
-
-ul{
-    gap: 30px;
-}
-
-li{
-    list-style: none;
 }
 
 a:link, a:visited {
@@ -43,7 +32,9 @@ a:active {
 
 /*  HEADER  */
 header{
-    gap: 100px;
+    margin: 1.2rem;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 h3{
@@ -64,7 +55,6 @@ main{
 /*  sobre mi  */
 
 .sobre_mi{
-    height: 50vh;
     gap: 40px;
     color: white;
     margin: 20px 50px;
@@ -84,8 +74,10 @@ main>section{
 }
 
 #skills{
-    width: 100%;
-    height: 40vh; 
+    width: 80%;
+    height: 40vh;
+    flex-direction: row; 
+    
 }
 
 .skills_title, .formacion_title{
@@ -95,19 +87,27 @@ main>section{
     -webkit-text-fill-color: transparent;
 }
 
-.container_tarjetas_skills{
+#container_tarjetas_skills{
     height: 30vh;
     width: 100%;
     gap: 40px;
     margin: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 /* formacion */
 
 #formacion{
-    width: 100%;
+    width: 80%;
     height: 40vh;
     gap: 20px;
+}
+
+#container_tarjetas_formacion{
+    flex-direction: row;
+    gap: 100px;
 }
 
 /*  proyectos */
@@ -115,7 +115,7 @@ main>section{
 #proyectos{
     padding: 40px;
     margin: 30px;
-    border: 5px solid white;
+    border: 5px dotted white;
     border-radius: 30px;
 }
 
@@ -124,21 +124,31 @@ main>section{
 }
 
 .estilo_boton{
-    width: 50px;
     color: white;
     background: linear-gradient(to right, #61B48C,#9961B4);
-    border: 1px solid white;
+    border: 3px solid white;
     border-radius: 10px;
     padding: 8px 8px;
+    margin: 5px;
+}
+.estilo_boton:hover{
+    background: transparent;
+    border: 3px solid #61B48C;
+    color: #9961B4;
+}
+
+.container_tarjeta_proyectos{
+    flex-direction: row;
 }
 
 .tarjeta_proyectos{
+    flex-direction: column;
     gap: 10px;
 }
 
 /*  contacto  */
 
-#contacto{
+.letra_blanca{
     color: white;
 }
 
@@ -147,8 +157,9 @@ input, textarea{
 }
 
 .container_formulario{
-    width: 90vw;
+    width: 100vw;
     gap: 50px;
+    flex-direction: row;
 }
 
 #telefono{
@@ -156,14 +167,26 @@ input, textarea{
 }
 
 .formulario_contacto{
-    gap: 10px;
+    width: 30%;
+    gap: 5px;
 }
 
-input, textarea{
+#nombre, #email, #asunto, #mensaje{
     border: 3px solid #61B48C;
     border-radius: 10px;
 }
 
+textarea{
+    height: 150px;
+}
+
+.enviar{
+    padding: 5px;
+}
+
+.enviar:hover{
+    color: white;
+}
 
 
 /*  FOOTER  */
@@ -172,6 +195,125 @@ footer{
     padding: 10px;
 }
 
-.iconos-redes{
+.iconos_redes{
     gap: 20px;
+}
+
+
+/*  RESPONSIVE  */
+@media all and (max-width: 880px) {
+    header{
+        gap: 10px;
+    }
+
+    #skills{
+        width: 100%;
+        height: 300px;
+    }
+
+    #formacion{
+        width: 100%;
+        height: 300px;
+        flex-wrap: wrap;
+    }
+}
+@media all and (max-width: 576px) {
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav{
+        width: 100%;
+        height: 30vh;
+        padding: 20px !important;
+    }
+
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+    }
+
+    header>h3{
+        font-size: 25px;
+    }
+
+    .sobre_mi{
+        width: 100%;
+        height: 40%;
+        padding: 10px;
+        font-size: 23px;
+    }
+    
+    #skills{
+        width: 90%;
+        height: 60vh;
+    }
+
+    #container_tarjetas_skills{
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tarjeta_skills{
+        margin: 30px;
+    }
+
+    #formacion{
+        width: 90%;
+        height: 40vh;
+        padding: 20px;
+        margin: 10px 0px;
+        gap: 10px;
+
+    }
+
+    #container_tarjetas_formacion{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .tarjeta_formacion{
+        padding: 15px;
+    }
+
+    #proyectos{
+        padding: 40px 0px;
+        margin: 0;
+    }
+
+    .container_proyectos{
+        margin: 40px 0px;
+    }
+
+    .container_tarjeta_proyectos{
+        flex-direction: column;
+        margin: 40px 0px;
+    }
+
+    .tarjeta_proyectos{
+        gap: 5px;
+    }
+
+    .container_formulario{
+        flex-direction: column;
+    }
+
+    #telefono{
+        width: 200px;
+        height: 200px;
+    }
+
+    .formulario_contacto{
+        width: 90%;
+    }
 }
